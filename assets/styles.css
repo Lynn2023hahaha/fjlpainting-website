@@ -11,6 +11,7 @@
   --contact-border: #d7dde5;
   --contact-ink: #1e3a5f;
   --contact-ink-dark: #102a43;
+  --contact-soft: #eef5ff;
   --shadow: 0 16px 42px rgba(17, 24, 39, 0.1);
   --radius: 8px;
 }
@@ -135,6 +136,17 @@ button {
   white-space: nowrap;
 }
 
+.header-call {
+  border-color: var(--contact-ink-dark);
+  background: var(--contact-ink-dark);
+  box-shadow: 0 10px 22px rgba(16, 42, 67, 0.18);
+}
+
+.header-email {
+  border-color: #c8d8ef;
+  background: var(--contact-soft);
+}
+
 .header-email span,
 .header-call span {
   color: var(--muted);
@@ -149,6 +161,15 @@ button {
   color: var(--contact-ink);
   font-size: clamp(0.92rem, 1.06vw, 1.08rem);
   font-weight: 950;
+}
+
+.header-call span,
+.header-call strong {
+  color: var(--white);
+}
+
+.header-email span {
+  color: #526985;
 }
 
 .section,
@@ -714,7 +735,7 @@ h3 {
 
 .mobile-contact-bar a:first-child {
   color: var(--white);
-  background: var(--contact-ink);
+  background: var(--contact-ink-dark);
 }
 
 @media (min-width: 720px) {
