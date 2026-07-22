@@ -7,9 +7,10 @@
   --black: #050505;
   --red: #ed2528;
   --red-dark: #b91c1c;
-  --contact-bg: #f8fafc;
-  --contact-border: #d7dde5;
-  --contact-ink: #182230;
+  --contact-bg: #fff5f5;
+  --contact-border: #fecaca;
+  --contact-ink: #c81e1e;
+  --contact-ink-dark: #991b1b;
   --shadow: 0 16px 42px rgba(17, 24, 39, 0.1);
   --radius: 8px;
 }
@@ -253,7 +254,7 @@ h3 {
 .button.primary {
   color: var(--white);
   background: var(--contact-ink);
-  box-shadow: 0 16px 36px rgba(24, 34, 48, 0.18);
+  box-shadow: 0 16px 36px rgba(200, 30, 30, 0.2);
 }
 
 .button.secondary {
@@ -440,17 +441,17 @@ h3 {
 }
 
 .contact-panel a strong {
-  color: var(--contact-ink);
+  color: var(--contact-ink-dark);
   font-size: clamp(1.05rem, 3vw, 1.34rem);
   line-height: 1.15;
 }
 
 .contact-phone-link strong {
-  color: var(--contact-ink);
+  color: var(--contact-ink-dark);
 }
 
 .contact-email-link strong {
-  color: var(--contact-ink);
+  color: var(--contact-ink-dark);
 }
 
 .contact-panel p {
@@ -459,7 +460,7 @@ h3 {
 }
 
 .contact-panel p strong {
-  color: var(--contact-ink);
+  color: var(--ink);
 }
 
 .choose-grid article {
@@ -478,7 +479,7 @@ h3 {
   height: 26px;
   border-radius: 50%;
   color: var(--white);
-  background: var(--contact-ink);
+  background: var(--ink);
   font-size: 0.9rem;
   font-weight: 950;
 }
