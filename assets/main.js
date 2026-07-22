@@ -82,7 +82,6 @@ const portfolioRoot = document.querySelector("[data-portfolio]");
 
 if (portfolioRoot) {
   const image = portfolioRoot.querySelector("[data-portfolio-image]");
-  const count = portfolioRoot.querySelector("[data-portfolio-count]");
   const title = portfolioRoot.querySelector("[data-portfolio-title]");
   const text = portfolioRoot.querySelector("[data-portfolio-text]");
   const previous = portfolioRoot.querySelector("[data-portfolio-prev]");
@@ -95,7 +94,6 @@ if (portfolioRoot) {
     const item = portfolio[activeIndex];
     image.src = item.src;
     image.alt = item.alt;
-    count.textContent = `${String(activeIndex + 1).padStart(2, "0")} / ${portfolio.length}`;
     title.textContent = item.title;
     text.textContent = item.text;
     thumbs.forEach((thumb, thumbIndex) => {
