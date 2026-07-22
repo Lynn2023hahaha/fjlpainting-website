@@ -7,10 +7,10 @@
   --black: #050505;
   --red: #ed2528;
   --red-dark: #b91c1c;
-  --contact-bg: #fff5f5;
-  --contact-border: #fecaca;
-  --contact-ink: #c81e1e;
-  --contact-ink-dark: #991b1b;
+  --contact-bg: #f8fafc;
+  --contact-border: #d7dde5;
+  --contact-ink: #1e3a5f;
+  --contact-ink-dark: #102a43;
   --shadow: 0 16px 42px rgba(17, 24, 39, 0.1);
   --radius: 8px;
 }
