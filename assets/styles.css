@@ -479,20 +479,20 @@ h3 {
   line-height: 1.15;
 }
 
-.contact-phone-link strong {
+.contact-panel a.contact-phone-link strong {
   color: var(--white);
 }
 
-.contact-email-link strong {
+.contact-panel a.contact-email-link strong {
   color: var(--contact-ink-dark);
 }
 
-.contact-phone-link {
+.contact-panel a.contact-phone-link {
   border-color: var(--contact-ink-dark);
   background: var(--contact-ink-dark);
 }
 
-.contact-phone-link span {
+.contact-panel a.contact-phone-link span {
   color: rgba(255, 255, 255, 0.72);
 }
 
