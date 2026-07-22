@@ -759,9 +759,15 @@ h3 {
 
 @media (min-width: 980px) {
   .site-header {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) auto minmax(360px, 1fr);
     min-height: 84px;
     padding: 10px clamp(20px, 4vw, 56px);
     gap: 16px;
+  }
+
+  .brand {
+    justify-self: start;
   }
 
   .menu-button {
@@ -774,7 +780,8 @@ h3 {
     align-items: center;
     justify-content: center;
     gap: 2px;
-    margin-left: auto;
+    justify-self: center;
+    margin-left: 0;
     padding: 0;
     border: 0;
     background: transparent;
@@ -784,6 +791,7 @@ h3 {
   .header-contact {
     display: inline-flex;
     flex: 0 0 auto;
+    justify-self: end;
     gap: 10px;
     white-space: nowrap;
   }
@@ -826,6 +834,11 @@ h3 {
 }
 
 @media (min-width: 980px) and (max-width: 1180px) {
+  .site-header {
+    grid-template-columns: minmax(130px, 0.85fr) auto minmax(300px, 1fr);
+    gap: 10px;
+  }
+
   .brand-logo {
     width: 158px;
   }
