@@ -152,21 +152,8 @@ button {
   font-weight: 950;
 }
 
+.header-email,
 .header-call {
-  border-color: var(--contact-ink-dark);
-  background: var(--contact-ink-dark);
-  box-shadow: 0 10px 22px rgba(16, 42, 67, 0.16);
-}
-
-.header-call span {
-  color: rgba(255, 255, 255, 0.72);
-}
-
-.header-call strong {
-  color: var(--white);
-}
-
-.header-email {
   background: var(--contact-soft);
 }
 
