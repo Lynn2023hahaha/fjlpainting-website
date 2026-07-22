@@ -68,12 +68,25 @@ button {
   height: auto;
 }
 
+.mobile-header-call {
+  display: inline-grid;
+  place-items: center;
+  min-height: 42px;
+  margin-left: auto;
+  border-radius: var(--radius);
+  padding: 0 15px;
+  color: var(--white);
+  background: var(--contact-ink-dark);
+  font-size: 0.92rem;
+  font-weight: 950;
+}
+
 .menu-button {
   display: grid;
   place-items: center;
   width: 42px;
   height: 42px;
-  margin-left: auto;
+  margin-left: 0;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--white);
@@ -155,6 +168,20 @@ button {
 .header-email,
 .header-call {
   background: var(--contact-soft);
+}
+
+.header-call {
+  border-color: var(--contact-ink-dark);
+  background: var(--contact-ink-dark);
+  box-shadow: 0 10px 22px rgba(16, 42, 67, 0.16);
+}
+
+.header-call span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.header-call strong {
+  color: var(--white);
 }
 
 .section,
@@ -453,11 +480,20 @@ h3 {
 }
 
 .contact-phone-link strong {
-  color: var(--contact-ink-dark);
+  color: var(--white);
 }
 
 .contact-email-link strong {
   color: var(--contact-ink-dark);
+}
+
+.contact-phone-link {
+  border-color: var(--contact-ink-dark);
+  background: var(--contact-ink-dark);
+}
+
+.contact-phone-link span {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .contact-panel p {
@@ -791,6 +827,10 @@ h3 {
   }
 
   .menu-button {
+    display: none;
+  }
+
+  .mobile-header-call {
     display: none;
   }
 
