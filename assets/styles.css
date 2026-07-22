@@ -124,6 +124,7 @@ button {
   display: grid;
   gap: 1px;
   min-width: 0;
+  min-height: 48px;
   border-radius: var(--radius);
   padding: 8px 12px;
   line-height: 1.1;
@@ -151,20 +152,16 @@ button {
 }
 
 .header-email strong {
-  color: var(--blue);
+  color: var(--ink);
 }
 
 .header-call {
-  border: 1px solid rgba(22, 163, 74, 0.22);
-  background: #f0fdf4;
-}
-
-.header-call span {
-  color: var(--green);
+  border: 1px solid var(--line);
+  background: var(--white);
 }
 
 .header-call strong {
-  color: var(--green);
+  color: var(--ink);
 }
 
 .section,
@@ -462,11 +459,11 @@ h3 {
 }
 
 .contact-phone-link strong {
-  color: var(--green);
+  color: var(--ink);
 }
 
 .contact-email-link strong {
-  color: var(--blue);
+  color: var(--ink);
 }
 
 .contact-panel p {
