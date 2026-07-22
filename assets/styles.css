@@ -11,6 +11,7 @@
   --contact-border: #d7dde5;
   --contact-ink: #1e3a5f;
   --contact-ink-dark: #102a43;
+  --contact-soft: #f8fafc;
   --shadow: 0 16px 42px rgba(17, 24, 39, 0.1);
   --radius: 8px;
 }
@@ -149,6 +150,24 @@ button {
   color: var(--contact-ink);
   font-size: clamp(0.92rem, 1.06vw, 1.08rem);
   font-weight: 950;
+}
+
+.header-call {
+  border-color: var(--contact-ink-dark);
+  background: var(--contact-ink-dark);
+  box-shadow: 0 10px 22px rgba(16, 42, 67, 0.16);
+}
+
+.header-call span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.header-call strong {
+  color: var(--white);
+}
+
+.header-email {
+  background: var(--contact-soft);
 }
 
 .section,
@@ -497,8 +516,17 @@ h3 {
 .portfolio-heading {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
-  margin-bottom: 24px;
+  gap: 10px;
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.portfolio-heading h2 {
+  margin-bottom: 0;
+}
+
+.portfolio-heading p:last-child {
+  max-width: 660px;
 }
 
 .portfolio-flipbook {
@@ -808,7 +836,6 @@ h3 {
     padding-inline: clamp(24px, 5vw, 64px);
   }
 
-  .portfolio-heading,
   .about-layout,
   .contact-layout {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
