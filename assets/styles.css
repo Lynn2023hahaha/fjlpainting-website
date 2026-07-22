@@ -7,8 +7,9 @@
   --black: #050505;
   --red: #ed2528;
   --red-dark: #b91c1c;
-  --blue: #2563eb;
-  --green: #16a34a;
+  --contact-bg: #f8fafc;
+  --contact-border: #d7dde5;
+  --contact-ink: #182230;
   --shadow: 0 16px 42px rgba(17, 24, 39, 0.1);
   --radius: 8px;
 }
@@ -112,7 +113,7 @@ button {
 
 .nav a:hover {
   color: var(--ink);
-  background: #fef2f2;
+  background: #f3f4f6;
 }
 
 .header-contact {
@@ -126,7 +127,9 @@ button {
   min-width: 0;
   min-height: 48px;
   border-radius: var(--radius);
+  border: 1px solid var(--contact-border);
   padding: 8px 12px;
+  background: var(--contact-bg);
   line-height: 1.1;
   white-space: nowrap;
 }
@@ -142,26 +145,9 @@ button {
 
 .header-email strong,
 .header-call strong {
+  color: var(--contact-ink);
   font-size: clamp(0.78rem, 1vw, 0.9rem);
   font-weight: 950;
-}
-
-.header-email {
-  border: 1px solid var(--line);
-  background: var(--white);
-}
-
-.header-email strong {
-  color: var(--ink);
-}
-
-.header-call {
-  border: 1px solid var(--line);
-  background: var(--white);
-}
-
-.header-call strong {
-  color: var(--ink);
 }
 
 .section,
@@ -266,8 +252,8 @@ h3 {
 
 .button.primary {
   color: var(--white);
-  background: var(--green);
-  box-shadow: 0 16px 36px rgba(22, 163, 74, 0.2);
+  background: var(--contact-ink);
+  box-shadow: 0 16px 36px rgba(24, 34, 48, 0.18);
 }
 
 .button.secondary {
@@ -426,22 +412,22 @@ h3 {
 
 .contact-panel {
   display: grid;
-  gap: 14px;
-  border: 1px solid var(--line);
+  gap: 12px;
+  border: 1px solid var(--contact-border);
   border-radius: var(--radius);
   padding: 18px;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: var(--shadow);
 }
 
 .contact-panel a {
   display: grid;
-  gap: 4px;
-  min-height: 82px;
-  border: 1px solid var(--line);
+  gap: 6px;
+  min-height: 74px;
+  border: 1px solid var(--contact-border);
   border-radius: var(--radius);
   padding: 16px;
-  background: var(--white);
+  background: var(--contact-bg);
   overflow-wrap: anywhere;
 }
 
@@ -454,16 +440,17 @@ h3 {
 }
 
 .contact-panel a strong {
-  font-size: clamp(1.15rem, 5vw, 1.55rem);
+  color: var(--contact-ink);
+  font-size: clamp(1.05rem, 3vw, 1.34rem);
   line-height: 1.15;
 }
 
 .contact-phone-link strong {
-  color: var(--ink);
+  color: var(--contact-ink);
 }
 
 .contact-email-link strong {
-  color: var(--ink);
+  color: var(--contact-ink);
 }
 
 .contact-panel p {
@@ -472,7 +459,7 @@ h3 {
 }
 
 .contact-panel p strong {
-  color: var(--ink);
+  color: var(--contact-ink);
 }
 
 .choose-grid article {
@@ -491,7 +478,7 @@ h3 {
   height: 26px;
   border-radius: 50%;
   color: var(--white);
-  background: var(--green);
+  background: var(--contact-ink);
   font-size: 0.9rem;
   font-weight: 950;
 }
@@ -725,7 +712,7 @@ h3 {
 
 .mobile-contact-bar a:first-child {
   color: var(--white);
-  background: var(--green);
+  background: var(--contact-ink);
 }
 
 @media (min-width: 720px) {
