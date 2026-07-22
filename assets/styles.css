@@ -125,7 +125,9 @@ button {
 .header-email,
 .header-call {
   display: grid;
+  justify-items: center;
   gap: 1px;
+  width: 100%;
   min-width: 0;
   min-height: 56px;
   border-radius: var(--radius);
@@ -133,6 +135,7 @@ button {
   padding: 10px 15px;
   background: var(--contact-bg);
   line-height: 1.1;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -551,31 +554,12 @@ h3 {
   object-fit: cover;
 }
 
-.portfolio-slide::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 42%;
-  pointer-events: none;
-  background: linear-gradient(180deg, transparent, rgba(5, 9, 15, 0.76));
-}
-
 .portfolio-slide figcaption {
-  position: absolute;
-  left: clamp(14px, 3vw, 28px);
-  right: clamp(14px, 3vw, 28px);
-  bottom: clamp(14px, 3vw, 28px);
-  z-index: 2;
   display: grid;
   gap: 6px;
-  max-width: 560px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 8px;
-  padding: clamp(14px, 2vw, 20px);
-  color: var(--white);
-  background: rgba(9, 15, 25, 0.62);
-  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(14px);
+  padding: 16px clamp(16px, 2.6vw, 24px) 18px;
+  color: var(--ink);
+  background: var(--white);
 }
 
 .portfolio-slide figcaption strong {
@@ -584,7 +568,7 @@ h3 {
 }
 
 .portfolio-slide figcaption small {
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--muted);
   font-size: 0.92rem;
 }
 
@@ -834,7 +818,9 @@ h3 {
   }
 
   .header-contact {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(440px, 100%);
     flex: 0 0 auto;
     justify-self: end;
     gap: 10px;
@@ -894,6 +880,7 @@ h3 {
   }
 
   .header-contact {
+    width: min(340px, 100%);
     gap: 6px;
   }
 
