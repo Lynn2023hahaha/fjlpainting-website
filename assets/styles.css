@@ -25,7 +25,7 @@ html {
 
 body {
   margin: 0;
-  padding-bottom: 64px;
+  padding-bottom: 72px;
   color: var(--ink);
   background: var(--paper);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -126,10 +126,10 @@ button {
   display: grid;
   gap: 1px;
   min-width: 0;
-  min-height: 48px;
+  min-height: 56px;
   border-radius: var(--radius);
   border: 1px solid var(--contact-border);
-  padding: 8px 12px;
+  padding: 10px 15px;
   background: var(--contact-bg);
   line-height: 1.1;
   white-space: nowrap;
@@ -138,7 +138,7 @@ button {
 .header-email span,
 .header-call span {
   color: var(--muted);
-  font-size: 0.64rem;
+  font-size: 0.68rem;
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -147,7 +147,7 @@ button {
 .header-email strong,
 .header-call strong {
   color: var(--contact-ink);
-  font-size: clamp(0.78rem, 1vw, 0.9rem);
+  font-size: clamp(0.92rem, 1.06vw, 1.08rem);
   font-weight: 950;
 }
 
@@ -706,8 +706,9 @@ h3 {
 .mobile-contact-bar a {
   display: grid;
   place-items: center;
-  min-height: 58px;
+  min-height: 64px;
   color: var(--ink);
+  font-size: 1rem;
   font-weight: 950;
 }
 
@@ -758,7 +759,7 @@ h3 {
 
 @media (min-width: 980px) {
   .site-header {
-    min-height: 74px;
+    min-height: 84px;
     padding: 10px clamp(20px, 4vw, 56px);
     gap: 16px;
   }
@@ -783,7 +784,7 @@ h3 {
   .header-contact {
     display: inline-flex;
     flex: 0 0 auto;
-    gap: 8px;
+    gap: 10px;
     white-space: nowrap;
   }
 
@@ -826,21 +827,26 @@ h3 {
 
 @media (min-width: 980px) and (max-width: 1180px) {
   .brand-logo {
-    width: 168px;
+    width: 158px;
   }
 
   .nav a {
-    padding: 10px 8px;
-    font-size: 0.9rem;
+    padding: 10px 7px;
+    font-size: 0.86rem;
+  }
+
+  .header-contact {
+    gap: 6px;
   }
 
   .header-email,
   .header-call {
-    padding: 8px 10px;
+    min-height: 54px;
+    padding: 9px 11px;
   }
 
   .header-email strong,
   .header-call strong {
-    font-size: 0.78rem;
+    font-size: 0.9rem;
   }
 }
