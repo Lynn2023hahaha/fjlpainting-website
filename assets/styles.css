@@ -359,8 +359,7 @@ h3 {
 
 .service-grid,
 .choose-grid,
-.process-list,
-.areas-grid {
+.process-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 14px;
@@ -672,21 +671,12 @@ h3 {
   margin-top: 20px;
 }
 
-.about-points span,
-.areas-grid span {
+.about-points span {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 10px 12px;
   background: var(--white);
   font-weight: 900;
-}
-
-.areas-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.areas-grid span {
-  text-align: center;
 }
 
 .site-footer {
@@ -774,10 +764,6 @@ h3 {
 
   .process-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .areas-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .mobile-contact-bar {
